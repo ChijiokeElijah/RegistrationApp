@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+button{
+  background-color: rgb(21, 21, 212) ;
+}
+button:hover{
+  background-color:rgb(133, 133, 238) ;
+}
+
