@@ -32,7 +32,7 @@ export default function Home() {
         e.preventDefault();
         try {
             if(formData.email === formData.ConfirmEmail){
-                const response = await axios.post("https://vercel.com/chijiokeelijahs-projects/registration-server/DRt4UziCAjGrG4uEDegs8QkJgG8n", formData);
+                await axios.post(" https://server-fwxl038tq-chijiokeelijahs-projects.vercel.app/user/register", formData);
                 console.log(formData)
                 //http://localhost:3000/user/register
                 toast.success("Registration Completed!")
