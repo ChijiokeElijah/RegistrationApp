@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../App.css'
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import photo from '../images/photo.JPG'
+
+
 
 interface SignupFormData {
     FirstName: string;
@@ -83,7 +86,7 @@ export default function Home() {
                     <p className='text-center'>Powered by <span className='italic'>Tech O'Clock</span></p>
                 </div>
                 <div className='md:flex-1'>
-                    <img src='src/images/tech-flier.JPG' alt='flier' className='h-[30%] w-[100%] sm:h-full'/>
+                    <img src={photo} alt='flier' className='h-[30%] w-[100%] sm:h-full'/>
                 </div>
             </div>
 
