@@ -32,8 +32,8 @@ export default function Home() {
         e.preventDefault();
         try {
             if(formData.email === formData.ConfirmEmail){
-                //await axios.post("https://server-90xsgbvqa-chijiokeelijahs-projects.vercel.app/user/register", formData);
-                await axios.post("http://localhost:3000/user/register", formData);
+                await axios.post("https://server-basx4c5n6-chijiokeelijahs-projects.vercel.app/user/register", formData);
+                // await axios.post("http://localhost:3000/user/register", formData);
             
                 console.log(formData)
                 //http://localhost:3000/user/register
