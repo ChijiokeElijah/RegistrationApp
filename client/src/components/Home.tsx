@@ -32,8 +32,9 @@ export default function Home() {
         e.preventDefault();
         try {
             if(formData.email === formData.ConfirmEmail){
-                const response = await axios.post("http://localhost:3000/user/register", formData);
+                const response = await axios.post("https://vercel.com/chijiokeelijahs-projects/registration-server/DRt4UziCAjGrG4uEDegs8QkJgG8n", formData);
                 console.log(formData)
+                //http://localhost:3000/user/register
                 toast.success("Registration Completed!")
             }else{
                 console.log('Email does not match')
