@@ -8,12 +8,11 @@ const connect_DB = require('./connectDB/connectDB');
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5174', '*', 'https://client-ognw04vuv-james-kalus-projects.vercel.app'], 
+  origin: ['http://localhost:5174'], 
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type'],
   credentials: true
 }));
-
 
 app.use(morgan("dev"));
 app.use(express.json());

@@ -28,7 +28,8 @@ export default function Home() {
     try {
       if (formData.email === formData.ConfirmEmail) {
         await axios.post(
-          "https://server-8xhdrkty7-james-kalus-projects.vercel.app/user/register",
+          // "http://localhost:3001/user/register", 
+          "https://server-nine-beryl-27.vercel.app/user/register",
           formData,
           {
             headers: {
