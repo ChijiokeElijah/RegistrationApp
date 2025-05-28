@@ -21,33 +21,6 @@ export default function Home() {
     RegNum: "",
   });
 
-  const EmailsMatch =
-    formData.email === formData.ConfirmEmail || formData.ConfirmEmail === "";
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-      if (formData.email === formData.ConfirmEmail) {
-        await axios.post(
-          // "http://localhost:3001/user/register", 
-          "https://server-nine-beryl-27.vercel.app/user/register",
-          formData,
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-            withCredentials: true, // Only if using cookies/sessions
-          }
-        );
-        toast.success("Registration Completed!");
-      } else {
-        console.log("Email does not match");
-      }
-    } catch (error) {
-      if (axios.isAxiosError(error)) {
-        toast.error(error.response?.data.message || "Registration failed");
-      } else {
-        toast.error("An unexpected error occurred");
-      }
     }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
